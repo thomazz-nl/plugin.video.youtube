@@ -610,7 +610,7 @@ class VideoInfo(object):
         if not html:
             return ''
 
-        found = re.search(r'"jsUrl":"(?P<url>[^"]*base.js)"', html)
+        found = re.search(r'"jsUrl":"(?P<url>[^"]*base\.js)"', html)
 
         if found:
             javascript_url = found.group('url')
